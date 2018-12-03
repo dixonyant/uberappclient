@@ -1,0 +1,28 @@
+<ion-card padding>
+  <div *ngIf="step">
+    <div>
+      <div class="name">
+        <div class="split left">
+          <ion-label>first</ion-label>
+          <ion-input required [(ngModel)]="driver.firstName"></ion-input>
+        </div>
+        <div class="split right">
+          <ion-label>last</ion-label>
+          <ion-input required [(ngModel)]="driver.lastName"></ion-input>
+        </div>
+      </div>
+      <ion-label>License Plate</ion-label>
+      <ion-input required [(ngModel)]="driver.licensePlate"></ion-input>
+      <ion-label>Vehicle Type<ion-icon name="lock"></ion-icon></ion-label>
+      <ion-input required [(ngModel)]="driver.vehicleType"></ion-input>
+    </div>
+    <button class="submit-button" (click)="go()">sign up</button>
+  </div>
+  <div *ngIf="!step">
+    <ion-label>username</ion-label>
+    <ion-input required [(ngModel)]="user.username"></ion-input>
+    <ion-label>password</ion-label>
+    <ion-input required type="password" [(ngModel)]="user.password"></ion-input>
+    <button class="submit-button" (click)="step=!step">next<ion-icon name="arrow-dropright"></ion-icon></button>
+  </div>
+</ion-card>

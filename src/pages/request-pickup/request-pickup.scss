@@ -1,0 +1,34 @@
+page-request-pickup {
+
+  ion-select {
+    margin-left: 40px;
+    background-color: rgba(0,0,0,0.4);
+    max-width: 60%;
+  }
+
+  ion-input {
+    background-color: rgba(128, 128, 128, .1);
+    color: white;
+  }
+
+  ion-option {
+    color: black;
+  }
+  
+  .title {
+    padding: 40px 0px 0px 10px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+  }
+
+  .fnt-size {
+    font-size: 1.3em;
+  }
+  
+  .request {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+  }
+
+}

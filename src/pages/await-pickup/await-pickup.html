@@ -1,0 +1,33 @@
+<ion-content padding>
+
+  <ion-card class="card">
+    <div *ngIf="request.status === requested" text-center class="title wait">
+      Awaiting Driver...
+      <div class="spinner">
+        <ion-spinner name="dots"></ion-spinner>
+      </div>
+    </div>
+    <div *ngIf="request.status === inProgress || request.status === completed" padding>
+      <div text-center class="title">On my way!</div>
+      <div class="content bold">Driver Information:</div>
+      <div padding class="content">
+        <div>Name: <span class="bold">{{request.driverUID?.firstName + ' ' + request.driverUID?.lastName}}</span></div>
+        <div>Car: <span class="bold">{{request.driverUID?.vehicleType}}</span></div>
+        <div>License: <span class="bold">{{request.driverUID?.licensePlate}}</span></div>
+        <div>Eta: <span class="bold">{{request.eta}} min.</span></div>
+      </div>
+      <div>
+        <div class="content bold">Payment Information:</div>
+        <div padding class="content">
+          <div>Card Number: <br/><span class="bold">**** - **** - **** - {{request?.riderUID?.card.cardNumber|slice:0:4}}</span></div>
+          <div>Expiration: <br/><span class="bold">{{request?.riderUID?.card.expDate}}</span></div>
+        </div>
+        (Payment will be required on arrival.)
+      </div>
+    </div>
+  </ion-card>
+
+  <div class="submit" >
+    <button text-center class="submit-button" [disabled]="request.status !== completed" (click)="pay()">pay</button>
+  </div>
+  </ion-content>

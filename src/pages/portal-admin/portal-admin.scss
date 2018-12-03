@@ -1,0 +1,28 @@
+page-portal-admin {
+
+  ion-label {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 16px;
+  }
+
+  ion-card.card-md {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.3em;
+    padding: 10px;
+    font-weight: bold;
+    width: 90%;
+    .right {
+      padding-top: 4px;
+      text-align: right;
+    }
+  }
+
+  .request {
+    position: fixed;
+    bottom: 40px;
+    right: 35%;
+  }
+
+}

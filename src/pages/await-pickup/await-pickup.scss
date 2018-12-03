@@ -1,0 +1,51 @@
+page-await-pickup {
+
+  ion-spinner {
+    width: 38px;
+    height: 38px;
+    stroke: #444;
+    fill: #222;
+  }
+
+  .spinner {
+    width:100%;
+    line-height: 70px;
+    zoom:1.2;
+  }
+
+  .wait {
+    margin-top: 65%;
+  }
+
+  .check {
+    font-size: 2.5em;
+    color: green;
+    padding-top: 0px;
+  }
+
+  .content {
+    font-size: 1.2em;
+  }
+
+  .title {
+    font-size: 1.5em;
+    font-weight:bold;
+    padding-top:20px;
+    padding-bottom: 40px;
+  }
+
+  .card {
+    height:80%;
+    opacity: .8;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .submit {
+    position: fixed;
+    bottom: 40px;
+    right: 35%;
+  }
+}

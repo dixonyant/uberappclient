@@ -1,0 +1,9 @@
+<ion-card padding>
+  <div class="form">
+    <ion-label>username</ion-label>
+    <ion-input required [(ngModel)]="user.username"></ion-input>
+    <ion-label>password</ion-label>
+    <ion-input required type="password" [(ngModel)]="user.password"></ion-input>
+  </div>
+  <button class="submit-button" (click)="go()">sign up</button>
+</ion-card>

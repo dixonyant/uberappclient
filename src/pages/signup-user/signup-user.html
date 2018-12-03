@@ -1,0 +1,32 @@
+<ion-card padding>
+  <div *ngIf="step">
+    <div>
+      <ion-label>Card: (Visa, Mastercard,)</ion-label>
+      <ion-input required [(ngModel)]="rider.card.vendor"></ion-input>
+      <ion-label>Card Number<ion-icon name="lock"></ion-icon></ion-label>
+      <ion-input required [(ngModel)]="rider.card.cardNumber"></ion-input>
+      <ion-label>CCW</ion-label>
+      <ion-input style="width:30%" required [(ngModel)]="rider.card.ccv"></ion-input>
+      <ion-label>Expiration Date (dd/yy)</ion-label>
+      <ion-input required [(ngModel)]="rider.card.expDate"></ion-input>
+    </div>
+    <button class="submit-button" (click)="go()">sign up</button>
+  </div>
+  <div *ngIf="!step">
+    <div class="name">
+      <div class="split left">
+        <ion-label>first</ion-label>
+        <ion-input required [(ngModel)]="rider.firstName"></ion-input>
+      </div>
+      <div class="split right">
+        <ion-label>last</ion-label>
+        <ion-input required [(ngModel)]="rider.lastName"></ion-input>
+      </div>
+    </div>
+    <ion-label>username</ion-label>
+    <ion-input required [(ngModel)]="user.username"></ion-input>
+    <ion-label>password</ion-label>
+    <ion-input required type="password" [(ngModel)]="user.password"></ion-input>
+    <button class="submit-button" (click)="step=!step">next<ion-icon name="arrow-dropright"></ion-icon></button>
+  </div>
+</ion-card>
