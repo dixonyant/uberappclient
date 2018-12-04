@@ -6,12 +6,16 @@ page-portal-admin {
     padding: 16px;
   }
 
+  .blue {
+    color:skyblue;
+  }
+
   ion-card.card-md {
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     font-size: 1.3em;
     padding: 10px;
-    font-weight: bold;
+    font-weight: 300;
     width: 90%;
     .right {
       padding-top: 4px;
