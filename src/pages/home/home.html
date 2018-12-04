@@ -7,14 +7,16 @@
           <ion-input class="login-input" mode="ios" text-center placeholder="username" required [(ngModel)]="user.username"></ion-input>
           <ion-input class="login-input" mode="ios" text-center type="password" placeholder="password" required [(ngModel)]="user.password"></ion-input>
         </div>
-        <button text-center class="submit-button" (click)="login()">login</button><br/>
+        <div class = "button-spacing">
+          <button text-center class="submit-button" (click)="login()">LOGIN</button><br/>
+        </div>
       </div>
-      <button class="login-signup" (click)="signup()">sign up</button>
+      <button class="submit-button" (click)="signup()">SIGN UP</button>
     </ion-slide>
     <ion-slide>
-        <button text-center class="signup-type" (click)="formAdmin()">admin</button><br/>
-        <button text-center class="signup-type" (click)="formDriver()">driver</button><br/>
-        <button text-center class="signup-type" (click)="formUser()">user</button>
+        <button text-center class="submit-button" (click)="formAdmin()">ADMIN</button><br/>
+        <button text-center class="submit-button" (click)="formDriver()">DRIVER</button><br/>
+        <button text-center class="submit-button" (click)="formUser()">USER</button>
     </ion-slide>
     <ion-slide>
       <page-signup-admin></page-signup-admin>

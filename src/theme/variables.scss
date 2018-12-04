@@ -73,19 +73,20 @@ $colors: (
 @import "ionic.theme.default";
 
 ion-content {
-  background-image: url('../../assets/imgs/background.jpg');
+  background-image: url('../../assets/imgs/blueGradient.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: 34% 0px; 
 }
 
 .submit-button {
-  padding: 20px 35px 20px 35px;
-  margin-top: 30px;
-  border-radius: 50px;
-  background-color: #003300;
+  padding: 15px 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #00c1fc;
   font-size: 1.3em;
   color: white;
+  width: 150px;
 }
 
 .label {
