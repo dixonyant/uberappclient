@@ -68,6 +68,18 @@ export class SelectPickupPage {
     }, 1000)
   }
 
+  back() {
+    if (this.stage ===2) {
+      this.stage = 1;
+      this.interval = setInterval(() => {
+        this.getRides();
+      }, 1000)
+    }
+    else {
+      this.navCtrl.pop();
+    }
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad SelectPickupPage');
   }
