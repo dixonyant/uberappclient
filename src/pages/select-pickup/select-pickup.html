@@ -19,12 +19,10 @@
   <div *ngIf="stage === 2">
     <ion-card padding class="cust-info">
       <div class="details-title">Customer Information:</div>
-      <div class="content">
-        <div>Name: <span class="bold">{{request.riderUID?.firstName + ' ' + request.riderUID?.lastName}}</span></div>
-        <div>Location: <span class="bold">{{request.pickup}}</span></div>
-        <div>Destination: <span class="bold">{{request.destination}}</span></div>
-        <div>Time: <span class="bold">{{request.time}}</span></div>
-      </div>
+      <div>Name: <span class="bold">{{request.riderUID?.firstName + ' ' + request.riderUID?.lastName}}</span></div>
+      <div>Location: <span class="bold">{{request.pickup}}</span></div>
+      <div>Destination: <span class="bold">{{request.destination}}</span></div>
+      <div>Time: <span class="bold">{{request.time}}</span></div>
     </ion-card>
     <ion-card padding class="eta-info">
       <div text-center>
@@ -42,8 +40,7 @@
     </div>
   </div>
 
-
-  <div class="submit" *ngIf="stage === 3">
+  <div *ngIf="stage === 3" text-center>
     <button text-center class="submit-button" (click)="arrived()">arrived</button>
   </div>
 
