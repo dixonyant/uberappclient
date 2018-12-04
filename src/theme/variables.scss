@@ -155,14 +155,19 @@ ion-icon {
   text-align: center;
 }
 
+.logout {
+  margin-top: 90px;
+}
+
 .signup-type {
-  padding: 15px 50px 15px 50px;
+  padding: 20px;
   margin-top: 30px;
+  border-radius: 5px;
   font-size: 1.3em;
-  border-radius: 50px;
-  background-color: #00001a;
+  background-color: white;
   box-shadow: 3px 3px 70px #404040;
-  color: white;
+  width: 180px;
+  color: black;
 }
 
 // Ionicons
