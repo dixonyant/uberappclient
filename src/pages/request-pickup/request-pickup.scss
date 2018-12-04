@@ -7,22 +7,25 @@ page-request-pickup {
   }
 
   ion-input {
-    background-color: rgba(128, 128, 128, .1);
+    background-color: rgba(128, 128, 128, .2);
     color: black;
   }
 
   ion-option {
     color: black;
   }
+
+  .card {
+    margin-bottom: 30px;
+  }
   
   .title {
-    padding: 40px 0px 0px 10px;
     font-size: 1.2em;
     letter-spacing: 1px;
   }
 
-  .fnt-size {
-    font-size: 1.3em;
+  .card-padding {
+    padding: 0px 16px 16px 16px;
   }
   
   .request {

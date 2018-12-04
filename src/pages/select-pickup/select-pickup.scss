@@ -7,10 +7,22 @@ page-select-pickup {
   }
 
   ion-input {
-    background-color: rgba(128, 128, 128, .1);
-    color: white;
+    background-color: rgba(128, 128, 128, .2);
+    color: black;
     width: 40%;
-    margin: 0 auto;
+    margin: 5px auto 70px auto;
+    .text-input {
+      text-align: center;
+    }
+  }
+
+  .cust-info {
+    margin-top: 30%;
+    line-height: 30px;
+  }
+
+  .eta-info {
+    margin-top:15%; 
   }
 
   .spinner {
@@ -20,7 +32,7 @@ page-select-pickup {
   }
 
   .wait {
-    margin-top: 65%;
+    margin-top: 75%;
   }
 
   .check {
@@ -36,28 +48,18 @@ page-select-pickup {
   .details-title {
     font-size: 1.3em;
     font-weight:bold;
-    padding-top: 15%;
-  }
-
-  .card {
-    height:95%;
-    opacity: .8;
+    padding-bottom: 10px;
   }
 
   .title {
     font-size: 1.5em;
-    font-weight:bold;
+    font-weight:normal;
     padding-top:20px;
     padding-bottom: 40px;
+    color:white;
   }
 
   .bold {
     font-weight: bold;
-  }
-
-  .submit {
-    position: fixed;
-    bottom: 60px;
-    right: 32%;
   }
 }
