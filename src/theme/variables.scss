@@ -93,9 +93,14 @@ ion-content {
   margin: 20px 0px 0px 0px;
 }
 
+button {
+  text-transform: uppercase !important;
+  font-weight: 400;
+}
+
 ion-label {
   text-align: left;
-  color: white;
+  color: black;
   font-size: 1.2em;;
 }
 
@@ -173,12 +178,13 @@ ion-icon {
 
 @import "roboto";
 @import "noto-sans";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
 
 @font-face{
-  font-family: Titillium Web;
+  font-family: 'Roboto', sans-serif;
   src: url('../assets/fonts/appfont.woff2') format('woff2');
   }
    
   *{
-  font-family: Titillium Web;
+    font-family: 'Roboto', sans-serif;
   }

@@ -11,7 +11,7 @@ import { Rider } from '../interfaces/Rider';
 
 @Injectable()
 export class DatabaseApi {
-  private url = 'http://192.241.235.189:8080';
+  private url = 'http://192.241.235.189';
   public defaultHeaders: Headers = new Headers();
 
   constructor (protected http: Http) {

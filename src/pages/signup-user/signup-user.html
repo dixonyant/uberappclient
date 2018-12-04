@@ -10,7 +10,7 @@
       <ion-label>Expiration Date (dd/yy)</ion-label>
       <ion-input required [(ngModel)]="rider.card.expDate"></ion-input>
     </div>
-    <button class="submit-button" (click)="go()">sign up</button>
+    <button class="submit-button" (click)="go()">SIGN UP</button>
   </div>
   <div *ngIf="!step">
     <div class="name">
@@ -27,6 +27,6 @@
     <ion-input required [(ngModel)]="user.username"></ion-input>
     <ion-label>password</ion-label>
     <ion-input required type="password" [(ngModel)]="user.password"></ion-input>
-    <button class="submit-button" (click)="step=!step">next<ion-icon name="arrow-dropright"></ion-icon></button>
+    <button class="submit-button" (click)="step=!step">NEXT</button>
   </div>
 </ion-card>
