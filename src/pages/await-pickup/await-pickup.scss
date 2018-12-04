@@ -13,30 +13,10 @@ page-await-pickup {
     zoom:1.2;
   }
 
-  .wait {
-    margin-top: 65%;
-  }
-
   .check {
     font-size: 2.5em;
     color: green;
     padding-top: 0px;
-  }
-
-  .content {
-    font-size: 1.2em;
-  }
-
-  .title {
-    font-size: 1.5em;
-    font-weight:bold;
-    padding-top:20px;
-    padding-bottom: 40px;
-  }
-
-  .card {
-    height:80%;
-    opacity: .8;
   }
 
   .bold {
@@ -45,5 +25,26 @@ page-await-pickup {
 
   .submit {
     margin-top: 10px;
+  }
+
+  .title {
+    font-size: 1.5em;
+    font-weight:normal;
+    color:white;
+  }
+
+  .details-title {
+    font-size: 1.3em;
+    font-weight:bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .wait {
+    margin-top: 75%;
+  }
+
+  .cust-info {
+    line-height: 30px;
   }
 }
