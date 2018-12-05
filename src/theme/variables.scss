@@ -73,28 +73,39 @@ $colors: (
 @import "ionic.theme.default";
 
 ion-content {
-  background-image: url('../../assets/imgs/background.jpg');
+  background-image: url('../../assets/imgs/blueGradient.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: 34% 0px; 
 }
 
 .submit-button {
-  padding: 20px 35px 20px 35px;
-  margin-top: 30px;
-  border-radius: 50px;
-  background-color: #003300;
+  padding: 15px 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #00c1fc;
   font-size: 1.3em;
   color: white;
+  width: 150px;
 }
 
 .label {
   margin: 20px 0px 0px 0px;
 }
 
+ion-spinner svg * {
+  stroke: white !important;
+  fill: white !important;
+}
+
+button {
+  text-transform: uppercase !important;
+  font-weight: 400;
+}
+
 ion-label {
   text-align: left;
-  color: white;
+  color: black;
   font-size: 1.2em;;
 }
 
@@ -135,11 +146,19 @@ ion-icon {
 
 .back {
   color: white;
-  font-size: 2.7em;
+  font-size: 2.5em;
   position: fixed;
-  background: radial-gradient(black, transparent);
+  background-color: #00c1fc;
+  border-radius: 50px;
+  line-height: 100%;
+  height: 50px;
+  width: 50px;
   bottom: 40px;
   left: 30px;
+  ion-icon {
+    padding-left: 15px;
+    padding-top: 4px;
+  }
 }
 
 .login-box {
@@ -149,15 +168,22 @@ ion-icon {
   text-align: center;
 }
 
-.signup-type {
-  padding: 15px 50px 15px 50px;
-  margin-top: 30px;
-  font-size: 1.3em;
-  border-radius: 50px;
-  background-color: #00001a;
-  box-shadow: 3px 3px 70px #404040;
-  color: white;
+.logout {
+  margin-top: 90px;
 }
+
+.signup-type {
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 1.3em;
+  background-color: white;
+  box-shadow: 3px 3px 70px #404040;
+  width: 180px;
+  color: black;
+}
+
+
 
 // Ionicons
 // --------------------------------------------------
@@ -172,12 +198,13 @@ ion-icon {
 
 @import "roboto";
 @import "noto-sans";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
 
 @font-face{
-  font-family: Titillium Web;
+  font-family: 'Roboto', sans-serif;
   src: url('../assets/fonts/appfont.woff2') format('woff2');
   }
    
   *{
-  font-family: Titillium Web;
+    font-family: 'Roboto', sans-serif;
   }

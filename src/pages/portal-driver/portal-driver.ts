@@ -29,7 +29,7 @@ export class PortalDriverPage {
   }
 
   selectPickup() {
-    this.navCtrl.setRoot(SelectPickupPage);
+    this.navCtrl.push(SelectPickupPage);
   }
 
   ionViewDidLoad() {

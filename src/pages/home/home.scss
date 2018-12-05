@@ -1,31 +1,35 @@
 page-home {
 
   ion-card {
-    background: transparent !important;
   }
 
   ion-input {
     background-color: rgba(128, 128, 128, .1);
-    color: white;
+    color: black;
   }
 
   .swiper-slide {
     font-size: 1em !important;
   }
 
+  .button-spacing{
+    margin-top: 40px;
+  }
+
   .login-input {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 1.3em;
-    border-radius: 50px;
-    background-color: #00001a;
-    color:white;
+    border-radius: 0px;
+    background-color: white;
+    color:black;
     box-shadow: 3px 3px 70px #404040;
   }
 
   .login-signup {
     color: white;
     padding: 30px;
-    background: radial-gradient(#262626, transparent);
+    background-color: white;
+    background: transparent;
     font-size: 1.3em;
   }
 }

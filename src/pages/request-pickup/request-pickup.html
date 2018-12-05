@@ -1,15 +1,21 @@
 <ion-content padding>
 
-  <div class="fnt-size">
+  <ion-card class="card-padding">
     <ion-label class="title">Location:</ion-label>
     <ion-input required [(ngModel)]="request.pickup"></ion-input>
+  </ion-card>
+
+  <ion-card class="card-padding">
     <ion-label class="title">Destination:</ion-label>
     <ion-input required [(ngModel)]="request.destination"></ion-input>
+  </ion-card>
+
+  <ion-card class="card-padding">
     <ion-label class="title">Time:</ion-label>
-    <ion-input class="fnt-size" required [(ngModel)]="request.time"></ion-input>
-  </div>
-  
-  
+    <ion-input required [(ngModel)]="request.time"></ion-input>
+  </ion-card>
+
+
 
   <div class="back" (click)="back()">
     <ion-icon name="ios-arrow-back"></ion-icon>
